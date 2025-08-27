@@ -1,0 +1,27 @@
+{
+	// General settings
+	"layer": "top",
+	"margin-top": 0,
+	"margin-bottom": 0,
+	"height": 30,
+
+	// Modules
+	"include": ["~/.dotfiles/waybar/modules.json"],
+
+	// Grouping
+	"modules-right": [
+		"pulseaudio",
+		"network",
+		"cpu",
+		"temperature",
+		"memory",
+		"custom/nvidia",
+		"disk",
+		"clock"
+	],
+	"modules-center": [  "hyprland/workspaces" ],
+	"modules-left": [
+		"custom/power",
+		"wlr/taskbar"
+	]	
+}

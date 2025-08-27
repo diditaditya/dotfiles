@@ -1,0 +1,159 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(43, 48, 59, 0.1);
+    color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#custom-power {
+    min-height: 20px;
+    min-width: 25px;
+    background-color: #64727D;
+    color: white;
+    border-radius: 15px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    margin: 2.5px 5px;
+}
+
+#workspaces {
+    background-color: #64727D;
+    border-radius: 10px;
+    padding: 2.5px 5px 0px 5px;
+    margin: 5px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#taskbar {
+    background-color: #64727F;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 2.5px 5px 2.5px 5px;
+}
+
+#clock {
+    background-color: #64727D;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#cpu {
+    background-color: #64727D;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px 0px 5px 5px;
+}
+
+#temperature {
+    background-color: #64727D;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+    margin: 5px 5px 5px 0px;
+}
+
+#memory {
+    background-color: #64727D;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 5px;
+}
+
+#custom-nvidia {
+    background-color: #64727D;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+#disk {
+    background-color: #64727D;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 5px;
+}
+
+#network {
+    background-color: #64727F;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 5px;
+}
+
+#pulseaudio {
+    background-color: #64727F;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin: 5px;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
