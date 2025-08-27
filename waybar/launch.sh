@@ -10,8 +10,6 @@ killall waybar
 # Load config
 # -----------------------------------
 if [[ $USER = "didit" ]]
-then nohup waybar -c ~/.dotfiles/waybar/conf -s ~/.dotfiles/waybar/style.css &
-else nohup waybar &
+then waybar -c ~/.dotfiles/waybar/conf -s ~/.dotfiles/waybar/style.css &
+else waybar &
 fi
-
-

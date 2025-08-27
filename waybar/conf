@@ -17,7 +17,8 @@
 		"memory",
 		"custom/nvidia",
 		"disk",
-		"clock"
+		"clock",
+		"custom/control"
 	],
 	"modules-center": [  "hyprland/workspaces" ],
 	"modules-left": [
