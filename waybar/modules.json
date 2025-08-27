@@ -1,7 +1,7 @@
 {
 	"clock": {
 		"interval": 60,
-		"format": "{:%H:%M} ",
+		"format": "{:%d-%m-%y %R} 󰃰",
 		"max-length": 25,
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
@@ -69,7 +69,7 @@
         		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
         		"alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
         		"headphone": "",
-        		"hands-free": "",
+        		"hands-free": "󱡏",
         		"headset": "",
         		"phone": "",
         		"phone-muted": "",
@@ -85,7 +85,7 @@
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-			"active": "󱠇",
+			"active": "󰣇",
 			"default": ""
 		}
 	},
@@ -98,12 +98,12 @@
 		"on-click-middle": "close",
 	},
 	"custom/power": {
-		"format": " 󰣇 ",
+		"format": "  ",
 		"tooltip": false,
 		"on-click": "wlogout --protocol layer-shell"
 	},
 	"custom/control": {
-		"format": "",
+		"format": "  ",
 		"tooltip": false,
 		"on-click": "control"
 	}

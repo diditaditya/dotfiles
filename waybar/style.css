@@ -28,10 +28,17 @@ tooltip label {
     border-radius: 15px;
     padding-left: 2.5px;
     padding-right: 2.5px;
-    margin: 2.5px 5px;
+    margin: 5px;
 }
 
 #custom-control {
+    min-height: 20px;
+    min-width: 25px;
+    background-color: #64727D;
+    color: white;
+    border-radius: 15px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
     margin: 5px;
 }
 
