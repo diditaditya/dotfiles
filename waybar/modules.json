@@ -108,7 +108,7 @@
 		"on-click": "control"
 	},
 	"custom/pacman": {
-		"format": "{} ",
+		"format": "{} 󰏔",
 		"min-length": 6,
 		"interval": 3600,                     // every hour
 		"exec": "checkupdates | wc -l",       // # of updates
