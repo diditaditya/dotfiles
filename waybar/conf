@@ -9,20 +9,40 @@
 	"include": ["~/.dotfiles/waybar/modules.json"],
 
 	// Grouping
+
+	"group/cpu": {
+		"orientation": "inherit",
+		"modules": [
+			"cpu",
+			"temperature"
+		]
+	},
+	"group/resource": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 500,
+			"transition-left-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"group/cpu",
+			"memory",
+			"custom/nvidia",
+			"disk"
+		]
+	},
+
 	"modules-right": [
 		"pulseaudio",
 		"network",
-		"cpu",
-		"temperature",
-		"memory",
-		"custom/nvidia",
-		"disk",
+		"group/resource",
 		"clock",
 		"custom/control"
 	],
 	"modules-center": [  "hyprland/workspaces" ],
 	"modules-left": [
 		"custom/power",
+		"custom/pacman",
 		"wlr/taskbar"
 	]	
 }
